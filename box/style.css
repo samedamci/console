@@ -14,7 +14,7 @@ body {
     margin: 30px auto auto auto;
 }
 
-#close-but, #minimalise-but, #help-but {
+#close-but, #minimalise-but, #cls-but {
     border-radius: 10px;
     height: 20px;
     width: 20px;
@@ -42,7 +42,7 @@ body {
     background: rgba(255, 166, 0, 0.726);
 }
 
-#help-but {
+#cls-but {
     background: green;
     margin-top: -20px;
     margin-left: 80px;
@@ -95,4 +95,8 @@ body {
 
 .commandtext {
     color: rgb(158, 149, 149);
+}
+
+.gametxt1 {
+    color: orange;
 }

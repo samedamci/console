@@ -2,6 +2,7 @@
 ===========
 ## What is it?
 This is a small console, which will be using to small projects.
+In future you will be possible play the text game with cool story, but... in future.
 
 ## How to get help?
 To get help use:

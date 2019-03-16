@@ -2,7 +2,7 @@
 <html lang="pl-PL">
 <head>  
     <meta charset="utf-8">
-    <title>Imagine Game</title>
+    <title>Console Box</title>
     <script src="index.js" type="text/javascript"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -11,7 +11,7 @@
         <div id="buttons">
             <div id="close-but" onclick="closeconsole()"></div>
             <div id="minimalise-but" onclick="minimaliseconsole()"></div>
-            <div id="help-but" onclick="clsconsole()"></div>
+            <div id="cls-but" onclick="clsconsole()"></div>
             <div id="textbox">
                 <span class="cprtext">
                 Console Box: <span class="vertext">ver. alpha 0.0</span><br />
@@ -20,9 +20,11 @@
                 ----------------------------------------------------
             </div>
 
-
-            <input type="text" id="commandline">
-            <input type="submit" id="enter" value="enter" onclick="sendcommand()">
+            <form action="#" onsubmit="cleancommandline()">
+                <input type="text" id="commandline">
+                <input type="submit" id="enter" value=">" onclick="sendcommand()">
+            </form>
+            
         </div>
     </div>
 
