@@ -10,4 +10,4 @@ help
 ```
 
 ## [Changelog](CHANGELOG.md)
-_This respository is very small project, but is all time developed.
+_This respository is very small project, but is all time developed._
