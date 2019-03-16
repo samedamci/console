@@ -6,3 +6,5 @@ To get help use:
 ```
 help
 ```
+
+ver. alpha 0.0
