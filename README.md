@@ -1,4 +1,4 @@
-[console.box](https://samedamci.github.io/console/box/index.html)
+[console.box](https://samedamci.github.io/console/box/index.html?#)
 ===========
 ## What is it?
 This is a small console, which will be using to small projects.
