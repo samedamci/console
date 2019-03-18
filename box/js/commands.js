@@ -13,9 +13,7 @@ function commands() {
     let commandtext = '<br /> <span class="commandtext"> command> </span>';
     let commandvalue = document.getElementById("commandline").value;
 
-    if (commandvalue === "") {
-       // nothing
-    } else {
+    if (commandvalue !== "") {
 
         document.getElementById("textbox").innerHTML += commandtext + commandvalue + "<br /><br />";
 
@@ -23,17 +21,17 @@ function commands() {
             helpCommand()
         } else if (commandvalue === "game") {
             gameCommand()
-        } else if (commandvalue === "create hero") {
+        } else if (commandvalue.startsWith("create hero")) {
             create_heroCommand()
         } else if (commandvalue === "hero") {
             heroCommand()
+        } else if (commandvalue === "reset hero") {
+            reset_heroCommand()
         } else {
             let errorlog = '<span class="errorlog"> > Incorrect command</span>';
             document.getElementById("textbox").innerHTML += errorlog + "<br />";
         }
-
     }
-
 }
 
 function helpCommand() {
@@ -49,7 +47,7 @@ function gameCommand() {
 }
 
 function create_heroCommand() {
-    let nick = document.getElementById("commandline").value.substring(12);
+    var nick = document.getElementById("commandline").value.substring(12);
     document.getElementById("textbox").innerHTML += '> You choose nick: "' + nick + '"<br />';           
     localStorage.setItem('nick',nick);
     localStorage.setItem('lvl','1');
@@ -71,4 +69,9 @@ function heroCommand() {
     } else {
         document.getElementById("textbox").innerHTML += '<span class="gametxt1">' + hero + "</span>";
     }
+}
+
+function reset_heroCommand() {
+    localStorage.clear();
+    document.getElementById("textbox").innerHTML += "> Hero was deleted. <br />"
 }
